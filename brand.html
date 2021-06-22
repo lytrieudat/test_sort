@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    
+    <link rel="stylesheet" href="css\product.css">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Compiled and minified jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/products.js"></script>
+</head>
+<body onload="javascript:getPageUrlId(),brandProducts()">
+    <div class="container">
+        <header>
+            <ul class="nav nav-tabs">
+                <li class="dropdown">
+                    <a href="" data-toggle="dropdown">CONTACT LENSES<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="brand.html?key1=a">AirOptix</a></li>
+                        <li><a href="brand.html?key1=c">Chromaview</a></li>
+                        <li><a href="brand.html?key1=e">Eyefusion</a></li>
+                        <li><a href="brand.html?key1=f">FreshLook</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>      
+        <br>
+        <br>
+        <br>
+        <!-- <div style="text-align: center;">
+            <img src="images/Airoptix/air-optix-colors-spot-color-logo.png"alt="">
+        </div> -->
+        <div class="row">
+            <select name="" id="select" style="float: right; height: 30px;font-size: large;">
+                <option value="">--------Sort by--------</option>
+                <option value="latest">Latest</option>
+                <option value="name">Name</option>
+                <option value="color">Color</option>
+                <option value="priceL">Price-Lowest to Highest</option>
+                <option value="priceH">Price-Highest to Lowest</option>
+                <option value="rating">Rating-Best frist</option>
+            </select>
+        </div><br><br><br><br>
+        <div class="row" id="brand_data"></div>
+    </div>
+
+</body>
+</html>
